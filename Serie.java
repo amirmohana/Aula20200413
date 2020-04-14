@@ -7,8 +7,8 @@ public class Serie {
 	private int nota;
 
 	public String toString() {
-		return "Serie [" + "nome:" + getNome() + ",nota:" + getNota()+" ,temporadas=" + getTemporadas() + ",Serie lançanda a "
-				+ getAnoDeLançamento() + " anos]";
+		return "Serie [" + "nome:" + getNome() + ",nota:" + getNota() + " ,temporadas=" + getTemporadas()
+				+ ",Serie lançanda a " + getAnoDeLançamento() + " anos]";
 	}
 
 	// 2.1 Um construtor padrão;
@@ -42,7 +42,7 @@ public class Serie {
 			throw new RuntimeException("Nota deve ser Maior que 0");
 		}
 		this.nota = nota;
-		
+
 	}
 
 	public String getNome() {
@@ -60,12 +60,15 @@ public class Serie {
 	}
 
 	public int getNota() {
-		return calcularNota() ;
+		return calcularNota();
 	}
 
+//2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
 	public int calculandoAnoDeLançamento() {
 		return 2020 - anoDeLançamento;
 	}
+
+//	2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
 	public int calcularNota() {
 		return 100 - nota;
 	}
