@@ -63,12 +63,12 @@ public class Serie {
 		return calcularNota();
 	}
 
-//2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
+
 	public int calculandoAnoDeLançamento() {
 		return 2020 - anoDeLançamento;
 	}
 
-//	2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
+
 	public int calcularNota() {
 		return 100 - nota;
 	}
